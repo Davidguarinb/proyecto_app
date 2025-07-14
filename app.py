@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-car_data = pd.read_csv(r"C:\Users\LENOVO\Desktop\Tripleten-DA\SPRT_7\Projecto\proyecto_app\vehicles_us.csv") #cargamos el dataset
+car_data = pd.read_csv(r"vehicles_us.csv") #cargamos el dataset
 
 #arreglamos los datos
 car_data['model_year'] = car_data['model_year'].fillna(2009) #  Tratamos los valores ausentes en la columna 'model_year'.
